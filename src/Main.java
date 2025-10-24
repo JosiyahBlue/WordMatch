@@ -6,8 +6,11 @@ public class Main {
         System.out.println(w.scoreGuess("issipp"));
         System.out.println(w.scoreGuess("mississippi"));
         WordMatch a = new WordMatch(("aaaabb"));
-
-
+        System.out.println(a.scoreGuess("a"));
+        System.out.println(a.scoreGuess("aa"));
+        System.out.println(a.scoreGuess("aaa"));
+        System.out.println(a.scoreGuess("aabb"));
+        System.out.println(a.scoreGuess("c"));
         WordMatch game = new WordMatch("concatenation");
         System.out.println(game.scoreGuess("ten"));
         System.out.println(game.scoreGuess("nation"));
