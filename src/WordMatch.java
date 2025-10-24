@@ -21,6 +21,9 @@ public class WordMatch {
         if(scoreGuess(guess2) > scoreGuess(guess1)) {
             return guess2;
         }
-        return null;
+        if (guess1.compareTo(guess2) > 0) {
+            return guess1;
+        }
+        return guess2;
     }
 }
